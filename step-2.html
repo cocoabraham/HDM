@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hacienda del Mar</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="carousel/owl.carousel.css" rel="stylesheet">
+    <link href="carousel/owl.theme.css" rel="stylesheet">
+    <link href="carousel/owl.transitions.css" rel="stylesheet">
+    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker3.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body class="blurred-back-xs">
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="#welcome" onclick="closeNav()">Welcome</a>
+            <a href="#account" onclick="closeNav()">My account</a>
+            <a href="#footer" onclick="closeNav()">Contact</a>
+            <a href="#" onclick="closeNav()">English</a>
+            <a href="#" onclick="closeNav()">Logout</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class=" navbar hidden-sm hidden-md hidden-lg">
+        <nav class="blue-60 height-100px" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a class="navbar-brand" href="#"><img class="navbar-logo" src="images/logo.png"> </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="navbar-header">
+                            <button type="button" class="back-red navbar-toggle" onclick="openNav()" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="user-info" class="col-xs-12 text-center">
+                        <span>Linda Strang</span>&nbsp;|&nbsp;<span>0000000001</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class=" navbar hidden-xs">
+        <nav class="blue-60 height-100px" role="navigation">
+            <div class="container">
+                <div class="col-sm-4 col-md-3">
+                    <a class="navbar-brand" href="#"><img class="navbar-logo" src="images/logo.png"> </a>
+                </div>
+                <div id="user-info" class="col-sm-4 col-md-4 text-center">
+                    <span>Linda Strang</span>&nbsp;|&nbsp;<span>0000000001</span>
+                </div>
+                <div class="col-sm-4 col-md-5">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="back-red navbar-toggle" onclick="openNav()" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#welcome">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#account">Mi cuenta</a>
+                            </li>
+                            <li>
+                                <a href="#footer">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Salir</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </div>
+            <!-- /.container -->
+        </nav>
+    </div>
+
+
+    <section id="reservation">
+        <div class="container">
+            <div class="reservation-box">
+                <div class="padding-20">
+
+                    <div class="stepwizard">
+                        <div class="stepwizard-row setup-panel">
+                            <div class="stepwizard-step">
+                                <a href="#" type="button" class="btn btn-default btn-circle"></a>
+                                <p>Search</p>
+                            </div>
+                            <div class="stepwizard-step icon-active">
+                                <a href="step-2.html" type="button" class="btn btn-primary-red btn-circle"></a>
+                                <p>Unit Type</p>
+                            </div>
+                            <div class="stepwizard-step">
+                                <a href="step-3.html" type="button" class="btn btn-default btn-circle"></a>
+                                <p>Reserve</p>
+                            </div>
+                            <div class="stepwizard-step">
+                                <a href="step-4.html" type="button" class="btn btn-default btn-circle"></a>
+                                <p>Confirmation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form role="form">
+
+                        <div class="" id="step-2">
+                            <div class="col-xs-12">
+                                <div class="col-md-12 text-center">
+                                    <div class="clear">&nbsp;</div>
+                                    <h3 class="txt-white"> New master suite</h3>
+                                    <div id="unit" class="owl-carousel owl-theme">
+                                        <div class="item text-center"><img src="images/unit-type-01.jpg" alt="tipo de unidad"></div>
+                                        <div class="item text-center"><img src="images/unit-type-01.jpg" alt="tipo de unidad"></div>
+                                        <div class="item text-center"><img src="images/unit-type-01.jpg" alt="tipo de unidad"></div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p class="txt-white">Vistas disponibles de la unidad:</p>
+                                    </div>
+                                    <div class="unit-icon-container text-center">
+                                        <div class="col-xs-4">
+                                            <a href="#" class="ocean-view"><img src="images/icon-ocean-view-d.png"></a>
+                                            <h5 class="txt-white">Ocean view</h5>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="step-3.html" class="ocean-front"><img src="images/icon-ocean-front.png"></a>
+                                            <h5 class="txt-white">Ocean front</h5>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="step-3.html" class="garden-view"><img src="images/icon-garden-view.png"></a>
+                                            <h5 class="txt-white">Garden view</h5>
+                                        </div>
+                                    </div>
+                                    <div class="clear">&nbsp;</div>
+                                    <div>
+                                        <a href="#" class="btn-no-width btn-type-red-lg" onclick="openNav3()">Search again</a>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <section id="footer">
+        <div class="container">
+            <div class="top row">
+                <div class="col-sm-4">
+                    <h3>Address</h3>
+                    <address>Hacienda del Mar Los Cabos<br>
+                     Corredor Turístico SJC-CSL KM. 10<br> Lote D, Cabo del Sol Cabo San Lucas<br> BCS, México 23450
+                  </address>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Phone</h3>
+                    <p>Gratuito desde USA y Canadá:
+                        <br>
+                        <a href="tel:18553232625">1-(855) 323-2625</a>
+                        <br> Directo desde USA y Canadá:
+                        <br>
+                        <a href="tel:525552830919">52 (555) 283-0919</a>
+                        <br> Directo desde Mexico:
+                        <br>
+                        <a href="tel:5552830906">(555)-283-0906</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Email</h3>
+                    <a href="mailto:vownership@haciendadelmar.com.mx">vownership@haciendadelmar.com.mx</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row text-center footer-social">
+                <div class="col-xs-3">
+                    <a href="#"><img src="images/ico-fb.png"> </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="#"><img src="images/ico-tw.png"> </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="#"><img src="images/ico-inst.png"> </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="#"><img src="images/ico-tv.png"> </a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <section id="legales">
+        <div class="container">
+            <div class="col-xs-6 text-left">&copy; 2016 Hacienda del Mar</div>
+            <div class="col-xs-6 text-right"><a href="#">Política de privacidad</a> | <a data-toggle="modal" data-target="#terms" href="#">Términos y condiciones</a></div>
+        </div>
+    </section>
+    <!-- The Modal -->
+    <div id="search-xs-modal" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div id="search-xs" class="modal-body">
+                <form class="form">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Check In</label>
+                                <input class="btn cal-icon" data-provide="datepicker" type="text" placeholder="Check In" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Unidad</label>
+                                <select class="selectpicker">
+                                    <option>Tipo de unidad</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Noches</label>
+                                <select class="selectpicker">
+                                    <option>Noches</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Adultos</label>
+                                <select class="selectpicker">
+                                    <option>Adultos</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Menores</label>
+                                <select class="selectpicker">
+                                    <option>Menores</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <button type="submit" class="btn back-red text-center txt-white">Search <i class="glyphicon glyphicon-search txt-white"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="search-modal" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div id="search-xs" class="modal-body container">
+                <form class="form">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Check In</label>
+                                <input class="btn cal-icon" data-provide="datepicker" type="text" placeholder="Check In" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Unidad</label>
+                                <select class="selectpicker">
+                                    <option>Tipo de unidad</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Noches</label>
+                                <select class="selectpicker">
+                                    <option>Noches</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Adultos</label>
+                                <select class="selectpicker">
+                                    <option>Adultos</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label class="sr-only" for="#">Menores</label>
+                                <select class="selectpicker">
+                                    <option>Menores</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <button type="submit" class="btn back-red text-center txt-white">Search <i class="glyphicon glyphicon-search txt-white"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="terms">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title txt-gold" id="terms">Terms</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <span class="bold">What You Should Know.</span>
+                        <br> Welcome to the http://ecvc.myaccountinquiry.com web sites (the "Web Site"). The goal of this Web Site is to provide you with access to the most comprehensive network of travel and vacation exchange products/services and related links to meet your needs. Please read our Terms of Use (the "Terms") carefully before continuing on with your use of this Web Site. These Terms shall govern the use of the Web Site and apply to all Internet traffic visiting the Web Site. By accessing or using this Web Site, you agree to the Terms. The Terms are meant to protect all of our Web Site visitors and your use of this Web Site signifies your agreement with these Terms. IF YOU DO NOT AGREE WITH THESE TERMS, DO NOT USE THIS WEB SITE. Resort Condominiums International de México, S. de R.L. de C.V. (hereinafter referred as “RCI”) reserves the right, in its sole discretion, to modify, alter or otherwise update these Terms at any time. Such modifications shall be effective immediately upon posting. By using this Web Site after we have posted notice of such modifications, alterations or updates you agree to be bound by such revised Terms.</p>
+                    <br>
+
+                    <p>In accordance with our goals, this Web Site will permit you to link to many other web sites, that may or may not be affiliated with this Web Site and/or RCI, and that may have terms of use that differ from, or contain terms in addition to, the terms specified here. Your access to such web sites through links provided on this Web Site is governed by the terms of use and policies of those sites, not this Web Site.</p>
+                    <br>
+
+                    <p>Privacy Registration data and certain other information about you is subject to our Privacy Policy. For more information, please review our full Privacy Policy.</p>
+                    <br>
+
+                    <p><span class="bold">Trademarks, Copyrights and Restrictions</span>
+                        <br> This Web Site is controlled and operated by Resort Condominiums International de Mexico, S. de R.L. de C.V., Horacio 1855, Pent House, Los Morales Polanco, México, D.F. All content on this Web Site, including, but not limited to text, images, illustrations, audio clips, and video clips, is protected by copyrights, trademarks, service marks, and/or other intellectual property rights (which are governed by U.S. and worldwide copyright laws and treaty provisions, privacy and publicity laws, and communication regulations and statutes), and are owned and controlled by RCI or its affiliates, or by third party content providers, merchants, sponsors and licensors (collectively "Providers") that have licensed their content or the right to market their products and/or services to RCI. Content on this Web Site or any web site owned, operated, licensed or controlled by the Providers is solely for your personal, non-commercial use. You may print a copy of the content and/or information contained herein for your personal, non-commercial use only, but you may not copy, reproduce, republish, upload, post, transmit, distribute, and/or exploit the content or information in any way (including by e-mail or other electronic means) for commercial use without the prior written consent of RCI or the Providers. You may request consent by faxing a request to RCI Legal at 57.24.16.54. Without the prior written consent of RCI or the Providers, your modification of the content, use of the content on any other web site or networked computer environment, or use of the content for any purpose other than personal, non-commercial use, violates the rights of the owners of the ecvc.myaccountinquiry.com web site and/or the Provider copyrights, trademarks or service marks and other proprietary rights, and is prohibited. As a condition to your use of this Web Site, you warrant to RCI that you will not use our Web Site for any purpose that is unlawful or prohibited by these Terms, including without limitation the posting or transmitting any threatening, libelous, defamatory, obscene, scandalous, inflammatory, pornographic, or profane material. If you violate any of these Terms, your permission to use our Web Site immediately terminates without the necessity of any notice. RCI retains the right to deny access to anyone at its discretion for any reason, including for violation of these Terms. You may not use on your web site any trademarks, service marks or copyrighted materials appearing on this Web Site, including but not limited to any logos or characters, without the express written consent of the owner of the mark or copyright. You may not frame or otherwise incorporate into another web site any of the content or other materials on this Web Site without prior written consent of RCI.</p>
+                    <br>
+
+                    <p><span class="bold">LINKS</span>
+                        <br> This Web site may contain links to other web sites ("Linked Sites"). The Linked Sites are provided for your convenience and information only and, as such, you access them at your own risk. The content of any Linked Sites is not under the control of RCI, and RCI is not responsible for, and does not endorse, such content, whether or not RCI is affiliated with the owners of such Linked Sites. You may not establish a hyperlink to this Web site or provide any links that state or imply any sponsorship or endorsement of your own, or any other, web site by RCI, or its affiliated or related entities, associates or partners, or Providers.</p>
+                    <br>
+
+                    <p><span class="bold">Disclaimer of Warranties and Liability.</span>
+                        <br> ALL CONTENT ON THIS WEB SITE IS PRORCIDED "AS IS" AND WITHOUT WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED. OTHER THAN THOSE WARRANTIES WHICH, UNDER THE MEXICAN LAWS APPLICABLE TO THESE TERMS, ARE IMPLIED BY LAW AND ARE INCAPABLE OF EXCLUSION, RESTRICTION, OR MODIFICATION, RCI DISCLAIMS ANY AND ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. NEITHER RCI ITS AFFILIATED OR RELATED ENTITIES, NOR THE PRORCIDERS, NOR ANY PERSON INVOLVED IN THE CREATION, PRODUCTION, AND DISTRIBUTION OF THIS WEB SITE WARRANT THAT THE FUNCTIONS CONTAINED IN THIS WEB SITE WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SERVER THAT MAKES THE CONTENT AVAILABLE WILL BE FREE OF RCIRUSES OR OTHER HARMFUL COMPONENTS. THE CONTENT THAT YOU ACCESS ON THIS WEB SITE IS PRORCIDED SOLELY FOR YOUR CONVENIENCE AND INFORMATION ONLY. RCI DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THIS WEB SITE, OR AS TO THE RELIABILITY, ACCURACY OR CURRENCY OF ANY INFORMATION CONTENT, SERRCICE AND/OR MERCHANDISE ACQUIRED PURSUANT TO YOUR USE OF THIS WEB SITE. YOU EXPRESSLY AGREE THAT USE OF THIS WEB SITE IS AT YOUR SOLE RISK. YOU (AND NOT RCI) ASSUME THE ENTIRE COST OF ALL NECESSARY SERRCICING, REPAIR OR CORRECTION OF YOUR SYSTEM. YOU EXPRESSLY AGREE THAT NEITHER RCI NOR ITS AFFILIATED OR RELATED ENTITIES (INCLUDING ITS PRORCIDERS), NOR ANY OF THEIR RESPECTIVE EMPLOYEES, OR AGENTS, NOR ANY PERSON OR ENTITY INVOLVED IN THE CREATION, PRODUCTION AND DISTRIBUTION OF THIS WEB SITE, IS RESPONSIBLE OR LIABLE TO ANY PERSON OR ENTITY WHATSOEVER FOR ANY LOSS, DAMAGE (WHETHER ACTUAL, CONSEQUENTIAL, PUNITIVE OR OTHERWISE), INJURY, CLAIM, LIABILITY OR OTHER CAUSE OF ANY KIND OR CHARACTER WHATSOEVER BASED UPON OR RESULTING FROM THE USE OR ATTEMPTED USE OF THIS WEB SITE OR ANY OTHER LINKED SITE. BY WAY OF EXAMPLE, AND WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, RCI AND RELATED PERSONS AND ENTITIES SHALL NOT BE RESPONSIBLE OR LIABLE FOR ANY CLAIM OR DAMAGE ARISING FROM FAILURE OF PERFORMANCE, ERROR, OMISSION, INTERRUPTION, DELETION, DEFECT, DELAY IN OPERATION, COMPUTER RCIRUS, THEFT, DESTRUCTION, UNAUTHORIZED ACCESS TO OR ALTERATION OF PERSONAL RECORDS, OR THE RELIANCE UPON OR USE OF DATA, INFORMATION, OPINIONS OR OTHER MATERIALS APPEARING ON THIS WEB SITE. YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT RCI IS NOT LIABLE OR RESPONSIBLE FOR ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF OTHER SUBSCRIBERS OR THIRD PARTIES. SOME JURISDICTIONS MAY NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES. IN SUCH JURISDICTIONS, RCI'S LIABILITY IS LIMITED TO THE GREATEST EXTENT PERMITTED BY LAW.</p>
+                    <br>
+
+                    <p><span class="bold">Indemnification</span>
+                        <br> You agree to indemnify, defend, and hold harmless RCI and the Providers, its and their officers, directors, employees, affiliates, agents, licensors, and suppliers from and against all losses, expenses, damages and costs, including reasonable attorneys' fees, resulting from any violation by you of these Terms.</p>
+                    <br>
+
+                    <p><span class="bold">Third Party Rights</span>
+                        <br> These Terms are for the benefit of RCI and its Providers, its and their officers, directors, employees, affiliates, agents, licensors, and suppliers. Each of these individuals or entities shall have the right to assert and enforce these Terms directly against you on its or their own behalf.</p>
+                    <br>
+
+                    <p><span class="bold">Jurisdictional Issues</span>
+                        <br> Unless otherwise specified, the content contained in this Web Site is presented solely for your convenience and/or information. This Web Site is controlled and operated by RCI from its offices within Horacio 1855, Pent House, Los Morales Polanco, México, D.F. RCI makes no representation that content in its Web Site is appropriate or available for use in other locations. Those who choose to access this Web Site from other locations do so on their own initiative and are responsible for compliance with local laws, if and to the extent local laws are applicable. You may not use or export the materials in this Web Site in violation of U.S. export laws and regulations. These Terms shall be governed by, construed and enforced in accordance with the laws of the State of New Jersey as they are applied to agreements entered into and to be performed entirely within such State. Any action you, any third party or RCI brings to enforce these Terms, or in connection with any matters related to this Web Site, shall be brought only in either the state or Federal courts located in MEXICO and you expressly consent to the jurisdiction of said courts. If any provision of these Terms shall be unlawful, void or for any reason unenforceable, then that provision shall be deemed severable from these Terms and shall not affect the validity and enforceability of any remaining provisions.</p>
+                    <br>
+
+                    <p><span class="bold">Entire Agreement</span>
+                        <br> The provisions and conditions of these Terms, and each obligation referenced herein, represent the entire Agreement between RCI, its affiliated or related entities, and you, and supersede any prior agreements or understandings not incorporated herein. In the event that any inconsistencies exist between these Terms and any future published terms of use or understanding, the last published Terms or terms of use or understanding shall prevail.</p>
+                    <br>
+
+                    <p><span class="bold">ANY RIGHTS NOT EXPRESSLY GRANTED HEREIN ARE RESERVED BY RCI.</span></p>
+                    <p></p>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-type-gold" data-dismiss="modal">I do not accept</a>
+                    <a href="reg-user.html" class="btn-type-gold">Accept</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="carousel/owl.carousel.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script>
+        $('.datepicker').datepicker();
+    </script>
+    <script src="js/bootstrap-select.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Configure/customize these variables.
+            var showChar = 0; // How many characters are shown by default
+            var ellipsestext = "";
+            var moretext = "Show less";
+            var lesstext = "Show more";
+
+
+            $('.more').each(function () {
+                var content = $(this).html();
+
+                if (content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar, content.length - showChar);
+
+                    var html = c + '<span class="moreellipses">' + ellipsestext + '</span><span class="morecontent"><span>' + h + '</span>  <div class="moretxt-container"><a href="" class="btn-type-gold">' + moretext + '</a></div></span>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            $(".btn-type-gold").click(function () {
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+                $(this).parent().prev().slideToggle();
+                $(this).prev().slideToggle();
+                return false;
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            var sync1 = $("#sync1");
+            var sync2 = $("#sync2");
+
+            sync1.owlCarousel({
+                singleItem: true,
+                slideSpeed: 1000,
+                navigation: false,
+                pagination: false,
+                afterAction: syncPosition,
+                responsiveRefreshRate: 200,
+            });
+
+            sync2.owlCarousel({
+                items: 6,
+                itemsDesktop: [1199, 10],
+                itemsDesktopSmall: [979, 10],
+                itemsTablet: [768, 8],
+                itemsMobile: [479, 4],
+                pagination: false,
+                responsiveRefreshRate: 100,
+                afterInit: function (el) {
+                    el.find(".owl-item").eq(0).addClass("synced");
+                }
+            });
+
+            function syncPosition(el) {
+                var current = this.currentItem;
+                $("#sync2")
+                    .find(".owl-item")
+                    .removeClass("synced")
+                    .eq(current)
+                    .addClass("synced")
+                if ($("#sync2").data("owlCarousel") !== undefined) {
+                    center(current)
+                }
+            }
+
+            $("#sync2").on("click", ".owl-item", function (e) {
+                e.preventDefault();
+                var number = $(this).data("owlItem");
+                sync1.trigger("owl.goTo", number);
+            });
+
+            function center(number) {
+                var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+                var num = number;
+                var found = false;
+                for (var i in sync2visible) {
+                    if (num === sync2visible[i]) {
+                        var found = true;
+                    }
+                }
+
+                if (found === false) {
+                    if (num > sync2visible[sync2visible.length - 1]) {
+                        sync2.trigger("owl.goTo", num - sync2visible.length + 2)
+                    } else {
+                        if (num - 1 === -1) {
+                            num = 0;
+                        }
+                        sync2.trigger("owl.goTo", num);
+                    }
+                } else if (num === sync2visible[sync2visible.length - 1]) {
+                    sync2.trigger("owl.goTo", sync2visible[1])
+                } else if (num === sync2visible[0]) {
+                    sync2.trigger("owl.goTo", num - 1)
+                }
+
+            }
+
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $("#unit").owlCarousel({
+
+                navigation: true, // Show next and prev buttons
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true
+
+                // "singleItem:true" is a shortcut for:
+                // items : 1, 
+                // itemsDesktop : false,
+                // itemsDesktopSmall : false,
+                // itemsTablet: false,
+                // itemsMobile : false
+
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-prev").html('<i class="glyphicon glyphicon-chevron-left"></i>');
+            $(".owl-next").html('<i class="glyphicon glyphicon-chevron-right"></i>');
+        });
+    </script>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav2() {
+            document.getElementById("search-xs-modal").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav2() {
+            document.getElementById("search-xs-modal").style.width = "0%";
+        }
+    </script>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav3() {
+            document.getElementById("search-modal").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav3() {
+            document.getElementById("search-modal").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
